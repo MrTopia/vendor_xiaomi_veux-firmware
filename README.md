@@ -36,7 +36,7 @@ Device tree dependencies file:
 Manual cloning:
 
 ```bash
-git clone https://gitlab.com/ThePrateekBhatia/vendor_xiaomi_veux-firmware.git vendor/xiaomi/veux-firmware
+git clone https://gitea.com/Karan-Frost/vendor_xiaomi_veux-firmware.git vendor/xiaomi/veux-firmware
 ```
 
 > These are example entries, you need to replace the relevant stuff
@@ -56,6 +56,6 @@ include vendor/xiaomi/veux-firmware/BoardConfigVendor.mk
 
 ## Firmware
 
-**ROM**: MIUI
+**ROM**: HyperOS
 
-**Version**: 14.0.4.0 TKCMIXM
+**Version**: 1.0.3.0 TKCMIXM
