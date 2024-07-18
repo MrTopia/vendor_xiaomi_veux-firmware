@@ -2,41 +2,17 @@
 
 ## What is this?
 
-A firmware tree to ship firmware with builds for the POCO X4 Pro 5G / Redmi Note 11E Pro / Redmi Note 11 Pro 5G / Redmi Note 11 Pro+ 5G.
+A firmware tree to ship firmware with builds for the POCO X4 Pro 5G / Redmi Note 11E Pro / Redmi Note 11 Pro 5G / Redmi Note 11 Pro+ 5G (peux/veux).
 
 # Getting started
 
 First of all, ensure you have cloned this into
 `vendor/xiaomi/veux-firmware`.
 
-Manifest:
-
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<manifest>
-    <remote name="yourremote" revision="main" clone-depth="1" />
-    <project name="vendor_xiaomi_veux-firmware" path="vendor/xiaomi/veux-firmware" remote="yourremote" />
-</manifest>
-```
-
-Device tree dependencies file:
-
-```
-[
-  {
-    "remote": "yourremote",
-    "repository": "vendor_xiaomi_veux-firmware",
-    "target_path": "vendor/xiaomi/veux-firmware",
-    "branch": "main",
-    "clone_depth": "1"
-  }
-]
-```
-
-Manual cloning:
+Cloning:
 
 ```bash
-git clone https://gitea.com/Karan-Frost/vendor_xiaomi_veux-firmware.git vendor/xiaomi/veux-firmware
+git clone https://gitea.com/Karan-Frost/vendor_xiaomi_veux-firmware.git vendor/xiaomi/veux-firmware -b main --depth=1
 ```
 
 > These are example entries, you need to replace the relevant stuff
@@ -58,4 +34,4 @@ include vendor/xiaomi/veux-firmware/BoardConfigVendor.mk
 
 **ROM**: HyperOS
 
-**Version**: 1.0.3.0 TKCMIXM
+**Version**: 1.0.5.0 TKCMIXM
